@@ -10,6 +10,9 @@ addButton.addEventListener("click", function () {
 
     const taskItem = document.createElement("p");
     taskItem.textContent = taskText;
+    taskItem.addEventListener("click", function () {
+    taskItem.remove();
+});
 
     document.querySelector(".task-app").appendChild(taskItem);
 
